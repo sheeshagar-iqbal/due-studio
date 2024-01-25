@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    overflow: hidden;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+.curser{
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    /* top: 0; */
+    z-index: 99;
+    border-radius: 50%;
+    background-color: crimson;
+    mix-blend-mode: difference;
+}
+.elem:hover .curser{
+    border-radius: 0%;
+}
+.main{
+  background-color: black;
+}
+.page1{
+   min-height: 100vh;
+   width: 100vw;
+   /* background-color: red; */
+}
+.page1 #nav{
+    height: 5vh;
+    width: 100vw;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1vw;
+    & img{
+        height: 5vh;
+    }
+    .nav-part2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+        & h4{
+        font-size: 0.9vw;
+        font-weight: 500;
+        text-transform: uppercase;
+      
+        }
+        & h4:nth-child(1){
+            text-decoration: underline;
+            margin-bottom: 0.1vw;
+               }
+    }
+    .circle{
+        height: 1vw;
+        width: 1vw;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+}
+.page1>h1{
+    font-size: 10vw;
+    font-weight: 400;
+    margin-top: 23vh;
+    margin-left: 6vw;
+    /* background-color: aqua; */
+
+}
+.page1 h2{
+    font-size: 10vw;
+    font-weight: 400;
+  
+    margin-left: 26vw;
+    
+}
+.page1 video{
+    width: 60%;
+    margin-top: 10vh;
+    /* margin-left: 20%; */
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.page2{
+    min-height: 85vh;
+    width: 100vw;
+    /* background-color: red; */
+    color: #111;
+    padding: 2vw 4vw;
+    border-bottom: 2px solid #594e4e;
+ }
+ .page2>h1{
+    font-size: 7.5vw;
+    font-weight: 300;
+    color: #111;
+ }
+ .page2 .leftandright{
+    height: 60vh;
+    /* background-color: aqua; */
+    display: flex;
+    color: #111;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    .leftpart{
+        width: 27vw;
+        color: #111;
+        /* background-color: blue; */
+        & h1{
+            font-size: 3.6vw;
+            font-weight: 400;
+            color: #111;
+        }
+    }
+    .rightpart{
+        width: 17vw;
+        /* background-color: blue; */
+        font-size: 1.1vw;
+        font-weight: 300;
+        color: #111;
+        & button{
+            width: 100%;
+            color: #111;
+            border-radius: 12%;
+            font-size: 15px;
+            padding: 5px 0;
+            border: none;
+            margin-top: 12px;
+            background-color: rgb(192, 188, 135);
+        }
+
+    }
+ }
+ .page3{
+   min-height:140vh;
+    width: 100vw;
+   /* background-color: aqua; */
+   padding: 100px 120px;
+   position: relative;
+   border-bottom: 2px solid black;
+ }
+ .page3 h1{
+    font-size: 8vw ;
+    margin-left: 3vw;
+    color: #000;
+ }
+ .coniv{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    & video{
+        /* margin-top: 4vh; */
+          width: 30vw;
+          /* height: 30vh; */
+    }
+    & img{
+         margin-top: 18vh; 
+        height: 53vh;
+        object-fit: cover;
+    }
+ }
+ .page3 .view-all{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 5vw 0;
+    & h1{
+        font-size: 3vw;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    & .project{
+        height: 18vh;
+        width: 18vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+        color: #000;
+        border-radius: 50%;
+        background-color: #d69aad;
+        & h4{
+            text-transform: uppercase;
+        }
+    }
+ }
+ .page4{
+    height: 100vh;
+    width: 100vw;
+    border-bottom: 2px solid black;
+    /* background-color: darkblue; */
+    padding: 200px 100px;
+   
+ }
+ .page4 .elem{
+    /* height: 50vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #d69aad; */
+  }
+ .elem .text{
+    /* background-color: lightblue; */
+    height: 150px;
+
+ }
+ .elem h1{
+    font-size: 7.6vw;
+    transition: all ease-out 0.5s;
+    color: #fff;
+ }
+ .elem img{
+    position: absolute;
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    transform: translateY(-10%), rotateX(10deg);
+ }
+ .page4 .elem img:nth-child(1){
+    left: 8%;
+}
+.page4 .elem img:nth-child(3){
+    right: 17%;
+    height: 50vh;
+}
+.elem:hover h1{
+    transform: translateY(-100%);
+    color: aquamarine;
+}
+.elem:hover img{
+   opacity: 1;
+   transform: translateY(), rotateX();
+
+}
+.page5{
+    height: 100vh;
+    /* width: 100vw;background-color: aqua; */
+    padding: 2vw 2vw;
+}
+.page5 h2{
+    font-size: 3.6vw;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 2vw;
+   
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1vw;
+    height: 90px;
+    border-top: 2px solid darkgray;
+}
+.box:nth-last-child(1){
+    border-bottom:2px solid darkgray ;
+}
+
+ .page6 .view-all{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 5vw 0;
+    & h1{
+        font-size: 3vw;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    & .project{
+        height: 18vh;
+        width: 18vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+        color: #000;
+        border-radius: 50%;
+        background-color: #d69aad;
+        & h4{
+            text-transform: uppercase;
+        }
+    }
+ }
+.page6{
+   min-height: 130vh;
+    width: 100vw;
+    border-bottom: 2px solid black;
+    background-color: #ab7e8d;
+    padding: 200px 100px;
+    .strat{
+       color: #000;
+        & h1{
+             font-size: 6vw;
+             color: #000;
+        }
+    }
+    & h6{color: #000;
+          margin-top: 2vh;
+          font-size: 1.5vw;
+          font-weight: 400;
+    }
+   .digo{
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    gap: 2vh;
+   
+    padding-top: 2vw;
+    & .dd{
+        & h5{
+            color: #000;
+        }
+        & p{ 
+            color: #000;
+        }
+    }
+   }
+ }
